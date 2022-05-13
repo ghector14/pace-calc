@@ -1,0 +1,87 @@
+body {
+    color: rgb(50, 46, 73);
+    font-family: 'Racing Sans One', cursive;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+h1 {
+    margin-top: 0;
+    padding: 10px;
+}
+
+label {
+    color: white;
+}
+
+p {
+    color: rgb(207, 207, 207);
+}
+
+form {
+    margin: 100px;
+}
+
+input, label {
+    display:block;
+    text-align: center;
+}
+
+#myVideo {
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+button {
+    margin: 0 auto;
+    padding: 2px;
+  }
+
+.btn {
+background: linear-gradient(0deg, rgb(146, 149, 165) 0%, rgb(205, 222, 230) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgb(30, 31, 109);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn:before{
+   height: 0%;
+   width: 2px;
+}
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+.btn:hover{
+  color: rgb(37, 38, 104);
+  background: transparent;
+  cursor: pointer;
+}
+
